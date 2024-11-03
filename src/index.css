@@ -1,0 +1,62 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+header{
+  height: 100px;
+  width: calc(100% - 40px);
+  margin: 10px 20px;
+  display: grid;
+  place-items: center;
+  border-top: 0;
+  border-radius: 0 0 10px 10px;
+  box-shadow:0 3px 10px green;
+  background-image: url(./components/Rick-And-Morty-Logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  /* background-color: #242424b4; */
+  backdrop-filter: blur(100px);
+  position: sticky;
+  z-index: 20;
+  top: 0;
+}
+a {
+  font-weight: 500;
+  color: #a9aeff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #c3c7ff;
+  transform: scale(1.01);
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
